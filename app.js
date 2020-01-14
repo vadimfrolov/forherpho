@@ -11,8 +11,8 @@ var app = express();
 
 //session management variables
 var config = require('./config');
-var redis = require('redis');
-var client = redis.createClient(process.env.REDIS_URL);
+// var redis = require('redis');
+// var client = redis.createClient(process.env.REDIS_URL);
 var crypto = require('crypto');
 var session = require('express-session');
 
@@ -48,11 +48,11 @@ var sess = {
   genid: (req) => {
   	return crypto.randomBytes(16).toString('hex');;
   },
-  store: new (require('express-sessions'))({
-  	storage: 'redis',
-      instance: client, // optional 
-      collection: 'sessions' // optional 
-  })
+  // store: new (require('express-sessions'))({
+  // 	storage: 'redis',
+  //     instance: client, // optional 
+  //     collection: 'sessions' // optional 
+  // })
 }
 
 
