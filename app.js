@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 
 var app = express();
-var client = redis.createClient(process.env.REDIS_URL);
+
 
 //session management variables
 var config = require('./config');
