@@ -1,0 +1,26 @@
+{
+  "name": "photogallery",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.0",
+    "express-sessions": "^1.0.6",
+    "galleria": "^1.6.1",
+    "hbs": "~4.0.4",
+    "helmet": "^3.21.2",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "node-cache": "^5.1.0",
+    "nodemon": "^2.0.2",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  }
+}
